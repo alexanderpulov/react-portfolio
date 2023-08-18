@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../../assets/img/me.jpg";
+import photo from "../../assets/img/main-photo.webp";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
 
@@ -99,7 +99,7 @@ const MainLink = styled.div`
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: #4c42cd;
+      background-color: #8b0ac8;
     }
   }
 `;
