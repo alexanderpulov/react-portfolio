@@ -2,33 +2,34 @@ import React from "react";
 import photo from "../../assets/img/main-photo.webp";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Main = () => {
   return (
-    <Container>
-      <StyledMain>
-        <MainLeft>
-          <MainName>Alexander Pulov</MainName>
-          <MainTitle>Creative thinker Minimalism lover</MainTitle>
-          <MainText>
-            Hi, I’m Jessica. I’m UI/UX Designer. If you are looking for Designer
-            to build your brands and grow your business Let’s shake hands with
-            me.
-          </MainText>
-          <MainLink>
-            <a href="">Hire me</a>
-          </MainLink>
-          <MainSmallText>I am currently open for part-time work.</MainSmallText>
-        </MainLeft>
-        <MainRight>{/* <MainPhoto src={photo} alt="" /> */}</MainRight>
-      </StyledMain>
-    </Container>
+    <StyledMain>
+      <Container>
+        <FlexWrapper justify="space-between">
+          <MainLeft>
+            <Name>Alexander Pulov</Name>
+            <Title>Creative thinker Minimalism lover</Title>
+            <Text>
+              Hi, I’m Jessica. I’m UI/UX Designer. If you are looking for
+              Designer to build your brands and grow your business Let’s shake
+              hands with me.
+            </Text>
+            <Link>
+              <a href="">Hire me</a>
+            </Link>
+            <SmallText>I am currently open for part-time work.</SmallText>
+          </MainLeft>
+          <MainRight></MainRight>
+        </FlexWrapper>
+      </Container>
+    </StyledMain>
   );
 };
 
-const StyledMain = styled.div`
-  display: flex;
-  justify-content: space-between;
+const StyledMain = styled.section`
   padding: 30px 0;
 `;
 
@@ -36,26 +37,7 @@ const MainLeft = styled.div`
   max-width: 600px;
 `;
 
-const MainTitle = styled.h1`
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 72px;
-`;
-
-const MainRight = styled.div`
-  border-radius: 6px;
-  overflow: hidden;
-  width: 478px;
-  height: 525px;
-  background: url(${photo}) no-repeat center bottom;
-  background-size: cover;
-`;
-
-// const MainPhoto = styled.img`
-//   transform: scaleX(-1);
-// `;
-
-const MainName = styled.div`
+const Name = styled.div`
   color: #4338ca;
   font-weight: 500;
   font-size: 20px;
@@ -74,20 +56,20 @@ const MainName = styled.div`
   }
 `;
 
-const MainText = styled.div`
+const Title = styled.h1`
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #1f2937;
+`;
+
+const Text = styled.p`
   color: #6b7280;
   font-size: 18px;
   margin-bottom: 50px;
 `;
 
-const MainSmallText = styled.div`
-  color: #6b7280;
-  font-size: 12px;
-  padding: 20px 0;
-  border-top: 1px solid #e5e7eb;
-`;
-
-const MainLink = styled.div`
+const Link = styled.div`
   margin-bottom: 40px;
 
   a {
@@ -102,4 +84,20 @@ const MainLink = styled.div`
       background-color: #8b0ac8;
     }
   }
+`;
+
+const SmallText = styled.p`
+  color: #6b7280;
+  font-size: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #e5e7eb;
+`;
+
+const MainRight = styled.div`
+  border-radius: 6px;
+  overflow: hidden;
+  width: 478px;
+  height: 525px;
+  background: url(${photo}) no-repeat center bottom;
+  background-size: cover;
 `;

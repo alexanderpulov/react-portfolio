@@ -6,30 +6,26 @@ import photo3 from "../../assets/img/trusted/amazon.png";
 import photo4 from "../../assets/img/trusted/google.png";
 import photo5 from "../../assets/img/trusted/netflix.png";
 import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Trusted = () => {
   return (
     <StyledTrusted>
       <Container>
         <h3>Trusted by</h3>
-        <PhotoWrapper>
+        <FlexWrapper justify="space-between">
           <img src={photo1} alt="" />
           <img src={photo2} alt="" />
           <img src={photo3} alt="" />
           <img src={photo4} alt="" />
           <img src={photo5} alt="" />
-        </PhotoWrapper>
+        </FlexWrapper>
       </Container>
     </StyledTrusted>
   );
 };
 
-const StyledTrusted = styled.div`
+const StyledTrusted = styled.section`
   background-color: #fef2f2;
-  padding: 100px 0;
-`;
-
-const PhotoWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  padding: 50px 0;
 `;

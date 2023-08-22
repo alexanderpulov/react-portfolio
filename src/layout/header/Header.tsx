@@ -2,39 +2,40 @@ import React from "react";
 import photo from "../../assets/img/logo.png";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Header = () => {
   return (
-    <Container>
-      <StyledHeader>
-        <a href="">
-          <Img src={photo} alt="" />
-        </a>
+    <StyledHeader>
+      <Container>
+        <FlexWrapper justify="space-between">
+          <a href="">
+            <Img src={photo} alt="" />
+          </a>
 
-        <Menu>
-          <ul>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Skills</a>
-            </li>
-            <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Hire me</a>
-            </li>
-          </ul>
-        </Menu>
-      </StyledHeader>
-    </Container>
+          <Menu>
+            <ul>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Skills</a>
+              </li>
+              <li>
+                <a href="">Projects</a>
+              </li>
+              <li>
+                <a href="">Hire me</a>
+              </li>
+            </ul>
+          </Menu>
+        </FlexWrapper>
+      </Container>
+    </StyledHeader>
   );
 };
 
-const StyledHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
+const StyledHeader = styled.header`
   padding: 40px 0;
 `;
 

@@ -10,25 +10,37 @@ export const Footer = () => {
       <Container>
         <SectionTitle>Contact with me</SectionTitle>
 
-        <div>
+        <p>
           I’m not currently taking on new client work but feel free to contact
           me for any other inquiries.
-        </div>
+        </p>
         <div>
-          <Icon iconId="twitter" />
-          <Icon iconId="dribbble" />
-          <Icon iconId="facebook" />
-          <Icon iconId="codepen" />
-          <Icon iconId="mail" />
-          <Icon iconId="instagram" />
+          <a href="">
+            <Icon iconId="twitter" />
+          </a>
+          <a href="">
+            <Icon iconId="dribbble" />
+          </a>
+          <a href="">
+            <Icon iconId="facebook" />
+          </a>
+          <a href="">
+            <Icon iconId="codepen" />
+          </a>
+          <a href="">
+            <Icon iconId="mail" />
+          </a>
+          <a href="">
+            <Icon iconId="instagram" />
+          </a>
         </div>
       </Container>
     </StyledFooter>
   );
 };
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   background-color: #fef2f2;
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
 `;

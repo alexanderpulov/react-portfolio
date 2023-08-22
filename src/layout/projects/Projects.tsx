@@ -9,26 +9,32 @@ import photo4 from "../../assets/img/projects/project-4.webp";
 
 export const Projects = () => {
   return (
-    <Container>
-      <SectionTitle>
-        It’s great to always give the customer the best feed.
-      </SectionTitle>
+    <StyledProjects>
+      <Container>
+        <SectionTitle>
+          It’s great to always give the customer the best feed.
+        </SectionTitle>
 
-      <ProjTop>
-        <ItemLeft>
-          <img src={photo1} alt="" />
-          <img src={photo2} alt="" />
-        </ItemLeft>
+        <ProjTop>
+          <ItemLeft>
+            <img src={photo1} alt="" />
+            <img src={photo2} alt="" />
+          </ItemLeft>
+          <div>
+            <img src={photo3} alt="" />
+          </div>
+        </ProjTop>
         <div>
-          <img src={photo3} alt="" />
+          <img src={photo4} alt="" />
         </div>
-      </ProjTop>
-      <div>
-        <img src={photo4} alt="" />
-      </div>
-    </Container>
+      </Container>
+    </StyledProjects>
   );
 };
+
+const StyledProjects = styled.section`
+  padding: 50px 0;
+`;
 
 const ProjTop = styled.div`
   display: flex;
