@@ -11,7 +11,12 @@ export const Header = () => {
       <Container>
         <FlexWrapper justify="space-between" align="center">
           <a href="">
-            <Img src={photo} alt="" />
+            <LogoBg>
+              <LogoText>
+                {/* <Img src={photo} alt="" /> */}
+                AP
+              </LogoText>
+            </LogoBg>
           </a>
 
           <Menu>
@@ -40,6 +45,25 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   padding: 30px 0;
+`;
+
+const LogoBg = styled.div`
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #eeebff;
+`;
+
+const LogoText = styled.span`
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #7b61ff;
+  transform: rotate(30deg);
+  user-select: none;
 `;
 
 const Img = styled.img`
