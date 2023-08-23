@@ -52,7 +52,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  padding: 50px 0 150px;
+  padding: 60px 0;
 `;
 
 const TitleSpan = styled.span`

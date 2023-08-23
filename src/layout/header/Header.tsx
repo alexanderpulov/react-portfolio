@@ -3,12 +3,13 @@ import photo from "../../assets/img/logo.png";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Btn } from "../../components/Btn";
 
 export const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper justify="space-between" align="center">
           <a href="">
             <Img src={photo} alt="" />
           </a>
@@ -25,7 +26,9 @@ export const Header = () => {
                 <a href="">Projects</a>
               </li>
               <li>
-                <a href="">Hire me</a>
+                <Btn background="fff" color="#3730A3" href="">
+                  Hire me
+                </Btn>
               </li>
             </ul>
           </Menu>
@@ -36,7 +39,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  padding: 40px 0;
+  padding: 30px 0;
 `;
 
 const Img = styled.img`
@@ -44,16 +47,17 @@ const Img = styled.img`
 `;
 
 const Menu = styled.nav`
+  display: flex;
+  align-items: center;
+
   ul {
     display: flex;
-    gap: 30px;
-    list-style: none;
+    gap: 80px;
 
     li {
       a {
-        color: #6b7280;
-        text-decoration: none;
         font-size: 18px;
+        font-weight: 500;
       }
     }
   }

@@ -3,12 +3,13 @@ import photo from "../../assets/img/main-photo.webp";
 import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { Btn } from "../../components/Btn";
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper justify="space-between" align="center">
           <MainLeft>
             <Name>Alexander Pulov</Name>
             <Title>Creative thinker Minimalism lover</Title>
@@ -17,9 +18,25 @@ export const Main = () => {
               Designer to build your brands and grow your business Let’s shake
               hands with me.
             </Text>
-            <Link>
-              <a href="">Hire me</a>
-            </Link>
+
+            <Btn
+              display="inline-block"
+              background="#3730A3"
+              color="#fff"
+              margin="0 20px 20px 0"
+              href=""
+            >
+              Hire me
+            </Btn>
+            <Btn
+              display="inline-block"
+              background="#fff"
+              color="#3730A3"
+              href=""
+            >
+              Read more
+            </Btn>
+
             <SmallText>I am currently open for part-time work.</SmallText>
           </MainLeft>
           <MainRight></MainRight>
@@ -30,7 +47,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  padding: 30px 0;
+  padding: 60px 0;
 `;
 
 const MainLeft = styled.div`
@@ -43,6 +60,7 @@ const Name = styled.div`
   font-size: 20px;
   position: relative;
   left: 110px;
+  margin-bottom: 40px;
 
   &::before {
     content: "";
@@ -61,29 +79,13 @@ const Title = styled.h1`
   font-weight: 700;
   line-height: 72px;
   color: #1f2937;
+  margin-bottom: 40px;
 `;
 
 const Text = styled.p`
   color: #6b7280;
   font-size: 18px;
-  margin-bottom: 50px;
-`;
-
-const Link = styled.div`
   margin-bottom: 40px;
-
-  a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 30px;
-    background-color: #3730a3;
-    border-radius: 6px;
-    transition: background-color 0.2s ease-in-out;
-
-    &:hover {
-      background-color: #8b0ac8;
-    }
-  }
 `;
 
 const SmallText = styled.p`

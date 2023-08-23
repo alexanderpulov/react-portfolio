@@ -27,5 +27,5 @@ export const Trusted = () => {
 
 const StyledTrusted = styled.section`
   background-color: #fef2f2;
-  padding: 50px 0;
+  padding: 60px 0;
 `;

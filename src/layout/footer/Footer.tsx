@@ -41,6 +41,6 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: #fef2f2;
-  padding: 50px 0;
+  padding: 60px 0;
   text-align: center;
 `;

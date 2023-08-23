@@ -33,7 +33,7 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  padding: 50px 0;
+  padding: 60px 0;
 `;
 
 const ProjTop = styled.div`
