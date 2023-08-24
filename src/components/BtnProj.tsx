@@ -12,10 +12,10 @@ export const BtnProj = styled.div`
   height: 95px;
   background-color: #fff;
   z-index: 1;
-  padding: 23px 27px;
   cursor: pointer;
+  padding: 23px 27px;
   opacity: 0;
-  transition: all 0.1s linear;
+  transition: all 0.3s linear;
 
   h3 {
     font-weight: 500;

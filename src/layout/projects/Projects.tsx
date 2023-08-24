@@ -94,12 +94,6 @@ const BoxItem = styled.div`
   position: relative;
   overflow: hidden;
 
-  &:hover {
-    ${BtnProj} {
-      opacity: 1;
-    }
-  }
-
   &::after {
     content: "";
     position: absolute;
@@ -110,11 +104,14 @@ const BoxItem = styled.div`
     background: inherit;
     background-size: cover;
     transform-origin: center;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     transform: scale(1.05);
   }
 
   &:hover {
+    ${BtnProj} {
+      opacity: 1;
+    }
     &::after {
       transform: scale(1);
     }
