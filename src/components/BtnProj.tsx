@@ -5,17 +5,16 @@ export const BtnProj = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -248px;
-  min-width: 496px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
   height: 95px;
   background-color: #fff;
   z-index: 1;
   cursor: pointer;
   padding: 23px 27px;
   opacity: 0;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
 
   h3 {
     font-weight: 500;

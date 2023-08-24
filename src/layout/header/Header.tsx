@@ -42,7 +42,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  padding: 30px 0;
+  padding: 90px 0;
 `;
 
 const LogoBg = styled.div`

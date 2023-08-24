@@ -16,7 +16,7 @@ export const Btn = styled.a<BtnPropsType>`
   font-weight: 500;
   display: ${(props) => props.display};
   margin: ${(props) => props.margin};
-  transition: all 0.15s ease-in-out;
+  transition: all 0.1s ease-in-out;
 
   &:hover {
     transform: scale(1.04);

@@ -46,7 +46,7 @@ const Link = styled.a`
   color: #3730a3;
   font-weight: 500;
   font-size: 12px;
-  transition: margin 0.2s ease-in-out;
+  transition: margin 0.3s ease-in-out;
 
   span {
     margin-right: 5px;

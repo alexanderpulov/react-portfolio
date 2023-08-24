@@ -86,7 +86,7 @@ const StyledProjects = styled.section`
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 55% 45%;
   gap: 30px;
 `;
 
@@ -105,7 +105,7 @@ const BoxItem = styled.div`
     background-size: cover;
     transform-origin: center;
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 
   &:hover {

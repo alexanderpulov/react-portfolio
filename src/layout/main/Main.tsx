@@ -47,7 +47,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  padding: 80px 0;
+  padding: 100px 0;
 `;
 
 const MainLeft = styled.div`
