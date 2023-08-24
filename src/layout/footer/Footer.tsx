@@ -8,13 +8,13 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <SectionTitle>Contact with me</SectionTitle>
+        <Title>Contact with me</Title>
 
         <p>
           I’m not currently taking on new client work but feel free to contact
           me for any other inquiries.
         </p>
-        <div>
+        <Social>
           <a href="">
             <Icon iconId="twitter" />
           </a>
@@ -33,7 +33,7 @@ export const Footer = () => {
           <a href="">
             <Icon iconId="instagram" />
           </a>
-        </div>
+        </Social>
       </Container>
     </StyledFooter>
   );
@@ -41,6 +41,27 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: #fef2f2;
-  padding: 60px 0;
+  padding: 73px 0;
   text-align: center;
+
+  p {
+    font-size: 18px;
+    color: #9ca3af;
+    max-width: 664px;
+    margin: 0 auto 100px;
+  }
+`;
+
+const Title = styled.h3`
+  color: #374151;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-bottom: 20px;
+`;
+
+const Social = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 `;

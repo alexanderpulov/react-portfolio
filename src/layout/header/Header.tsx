@@ -22,13 +22,13 @@ export const Header = () => {
           <Menu>
             <ul>
               <li>
-                <a href="">About</a>
+                <a href="">Services</a>
               </li>
               <li>
-                <a href="">Skills</a>
+                <a href="">Works</a>
               </li>
               <li>
-                <a href="">Projects</a>
+                <a href="">Blog</a>
               </li>
               <li>
                 <Btn background="fff" color="#3730A3" href="">
@@ -58,7 +58,7 @@ const LogoBg = styled.div`
 const LogoText = styled.span`
   position: absolute;
   top: 16px;
-  left: 14px;
+  left: 15px;
   font-weight: 600;
   font-size: 24px;
   color: #7b61ff;

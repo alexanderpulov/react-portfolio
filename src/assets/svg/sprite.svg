@@ -5,6 +5,11 @@
         <path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#3730A3" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
 
+    <g id="arrow-black">
+        <path d="M3.33333 8H12.6667" stroke="#1F2937" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#1F2937" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
     <!-- Footer -->
     <g id="codepen">
         <path d="M17.5 2.91675L32.0833 12.3959V22.6042L17.5 32.0834L2.91667 22.6042V12.3959L17.5 2.91675Z" stroke="#6B7280" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>

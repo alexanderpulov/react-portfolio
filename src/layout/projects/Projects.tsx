@@ -6,6 +6,7 @@ import photo1 from "../../assets/img/projects/project-1.webp";
 import photo2 from "../../assets/img/projects/project-2.webp";
 import photo3 from "../../assets/img/projects/project-3.webp";
 import photo4 from "../../assets/img/projects/project-4.webp";
+import { Icon } from "../../components/Icon";
 
 export const Projects = () => {
   return (
@@ -16,43 +17,31 @@ export const Projects = () => {
         </SectionTitle>
 
         <Box>
+          <BoxItem></BoxItem>
           <BoxItem>
-            <Link>123</Link>
+            <Link>
+              <div>
+                <h3>Project title here</h3>
+                <span>Photograph</span>
+              </div>
+              <Icon
+                iconId="arrow-black"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              />
+            </Link>
           </BoxItem>
           <BoxItem></BoxItem>
           <BoxItem></BoxItem>
-          <BoxItem></BoxItem>
         </Box>
-
-        {/* <ProjTop>
-          <ItemLeft>
-            <img src={photo1} alt="" />
-            <img src={photo2} alt="" />
-          </ItemLeft>
-          <div>
-            <img src={photo3} alt="" />
-          </div>
-        </ProjTop>
-        <div>
-          <img src={photo4} alt="" />
-        </div> */}
       </Container>
     </StyledProjects>
   );
 };
 
 const StyledProjects = styled.section`
-  padding: 60px 0;
-`;
-
-const ProjTop = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const ItemLeft = styled.div`
-  display: flex;
-  flex-direction: column;
+  padding: 100px 0;
 `;
 
 const Box = styled.div`
@@ -109,11 +98,28 @@ const BoxItem = styled.div`
 
 const Link = styled.div`
   position: absolute;
-  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 40px;
   left: 50%;
   margin-left: -248px;
-  width: 496px;
+  min-width: 496px;
   height: 95px;
-  background-color: aqua;
+  background-color: #fff;
   z-index: 1;
+  padding: 23px 27px;
+
+  h3 {
+    font-weight: 500;
+    color: #1f2937;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #9ca3af;
+  }
 `;

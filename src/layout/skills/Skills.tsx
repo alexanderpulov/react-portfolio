@@ -52,20 +52,23 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  padding: 60px 0;
+  padding: 66px 0 100px;
 `;
 
 const TitleSpan = styled.span`
   color: #3730a3;
 `;
 
-const Content = styled.div`
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 const Photo = styled.div`
   max-width: 440px;
   max-height: 622px;
+  margin-right: 50px;
+`;
+
+const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
 `;

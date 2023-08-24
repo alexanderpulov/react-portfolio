@@ -7,5 +7,5 @@ export const SectionTitle = styled.h2`
   text-align: center;
   font-weight: 600;
   max-width: 1040px;
-  margin: 0 auto 80px;
+  margin: 0 auto 100px;
 `;

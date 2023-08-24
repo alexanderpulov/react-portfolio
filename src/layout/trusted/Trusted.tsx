@@ -12,8 +12,8 @@ export const Trusted = () => {
   return (
     <StyledTrusted>
       <Container>
-        <h3>Trusted by</h3>
-        <FlexWrapper justify="space-between">
+        <Title>Trusted by</Title>
+        <FlexWrapper justify="space-between" align="center">
           <img src={photo1} alt="" />
           <img src={photo2} alt="" />
           <img src={photo3} alt="" />
@@ -27,5 +27,12 @@ export const Trusted = () => {
 
 const StyledTrusted = styled.section`
   background-color: #fef2f2;
-  padding: 60px 0;
+  padding: 66px 0;
+`;
+
+const Title = styled.h3`
+  font-size: 20px;
+  color: #9ca3af;
+  font-weight: 400;
+  margin-bottom: 20px;
 `;

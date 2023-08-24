@@ -14,7 +14,7 @@ export const Main = () => {
             <Name>Alexander Pulov</Name>
             <Title>Creative thinker Minimalism lover</Title>
             <Text>
-              Hi, I’m Jessica. I’m UI/UX Designer. If you are looking for
+              Hi, I’m Alexander. I’m UI/UX Designer. If you are looking for
               Designer to build your brands and grow your business Let’s shake
               hands with me.
             </Text>
@@ -47,7 +47,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  padding: 60px 0;
+  padding: 66px 0;
 `;
 
 const MainLeft = styled.div`
