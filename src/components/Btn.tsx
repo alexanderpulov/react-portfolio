@@ -13,7 +13,12 @@ export const Btn = styled.a<BtnPropsType>`
   background-color: ${(props) => props.background};
   border: #3730a3 1px solid;
   border-radius: 6px;
-  transition: background-color 0.2s ease-in-out;
+  font-weight: 500;
   display: ${(props) => props.display};
   margin: ${(props) => props.margin};
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 `;

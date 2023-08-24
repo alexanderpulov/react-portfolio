@@ -109,6 +109,7 @@ const Link = styled.div`
   background-color: #fff;
   z-index: 1;
   padding: 23px 27px;
+  cursor: pointer;
 
   h3 {
     font-weight: 500;

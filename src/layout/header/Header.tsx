@@ -30,12 +30,10 @@ export const Header = () => {
               <li>
                 <a href="">Blog</a>
               </li>
-              <li>
-                <Btn background="fff" color="#3730A3" href="">
-                  Hire me
-                </Btn>
-              </li>
             </ul>
+            <Btn background="fff" color="#3730A3" href="">
+              Hire me
+            </Btn>
           </Menu>
         </FlexWrapper>
       </Container>
@@ -66,9 +64,9 @@ const LogoText = styled.span`
   user-select: none;
 `;
 
-const Img = styled.img`
-  width: 60px;
-`;
+// const Img = styled.img`
+//   width: 60px;
+// `;
 
 const Menu = styled.nav`
   display: flex;
@@ -76,9 +74,10 @@ const Menu = styled.nav`
 
   ul {
     display: flex;
-    gap: 80px;
 
     li {
+      margin-right: 80px;
+
       a {
         font-size: 18px;
         font-weight: 500;
