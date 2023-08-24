@@ -81,7 +81,7 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-  padding: 100px 0;
+  padding: 150px 0;
 `;
 
 const Box = styled.div`

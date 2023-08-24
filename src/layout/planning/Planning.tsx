@@ -42,7 +42,7 @@ export const Planning = () => {
 };
 
 const StyledPlanning = styled.section`
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 `;
 
 const Box = styled.div`

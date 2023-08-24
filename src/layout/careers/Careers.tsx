@@ -61,7 +61,7 @@ export const Careers = () => {
 };
 
 const StyledCareers = styled.section`
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 `;
 
 const Table = styled.table`

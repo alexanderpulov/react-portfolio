@@ -27,7 +27,7 @@ export const Trusted = () => {
 
 const StyledTrusted = styled.section`
   background-color: #fef2f2;
-  padding: 66px 0;
+  padding: 100px 0;
 `;
 
 const Title = styled.h3`
