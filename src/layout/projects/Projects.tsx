@@ -7,6 +7,7 @@ import photo2 from "../../assets/img/projects/project-2.webp";
 import photo3 from "../../assets/img/projects/project-3.webp";
 import photo4 from "../../assets/img/projects/project-4.webp";
 import { Icon } from "../../components/Icon";
+import { BtnProj } from "../../components/BtnProj";
 
 export const Projects = () => {
   return (
@@ -17,9 +18,8 @@ export const Projects = () => {
         </SectionTitle>
 
         <Box>
-          <BoxItem></BoxItem>
           <BoxItem>
-            <Link>
+            <BtnProj>
               <div>
                 <h3>Project title here</h3>
                 <span>Photograph</span>
@@ -30,10 +30,50 @@ export const Projects = () => {
                 height="30"
                 viewBox="0 0 15 15"
               />
-            </Link>
+            </BtnProj>
           </BoxItem>
-          <BoxItem></BoxItem>
-          <BoxItem></BoxItem>
+          <BoxItem>
+            <BtnProj>
+              <div>
+                <h3>Project title here</h3>
+                <span>Photograph</span>
+              </div>
+              <Icon
+                iconId="arrow-black"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              />
+            </BtnProj>
+          </BoxItem>
+          <BoxItem>
+            <BtnProj>
+              <div>
+                <h3>Project title here</h3>
+                <span>Photograph</span>
+              </div>
+              <Icon
+                iconId="arrow-black"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              />
+            </BtnProj>
+          </BoxItem>
+          <BoxItem>
+            <BtnProj>
+              <div>
+                <h3>Project title here</h3>
+                <span>Photograph</span>
+              </div>
+              <Icon
+                iconId="arrow-black"
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+              />
+            </BtnProj>
+          </BoxItem>
         </Box>
       </Container>
     </StyledProjects>
@@ -53,6 +93,12 @@ const Box = styled.div`
 const BoxItem = styled.div`
   position: relative;
   overflow: hidden;
+
+  &:hover {
+    ${BtnProj} {
+      opacity: 1;
+    }
+  }
 
   &::after {
     content: "";
@@ -93,34 +139,5 @@ const BoxItem = styled.div`
     background: url(${photo4}) no-repeat center / cover;
     grid-column: 1 / 3;
     height: 435px;
-  }
-`;
-
-const Link = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -248px;
-  min-width: 496px;
-  height: 95px;
-  background-color: #fff;
-  z-index: 1;
-  padding: 23px 27px;
-  cursor: pointer;
-
-  h3 {
-    font-weight: 500;
-    color: #1f2937;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  span {
-    font-weight: 500;
-    font-size: 14px;
-    color: #9ca3af;
   }
 `;
