@@ -7,7 +7,7 @@ import photo2 from "../../assets/img/projects/project-2.webp";
 import photo3 from "../../assets/img/projects/project-3.webp";
 import photo4 from "../../assets/img/projects/project-4.webp";
 import { Icon } from "../../components/Icon";
-import { BtnProj } from "../../components/BtnProj";
+import { BtnProj } from "./project/BtnProj";
 
 export const Projects = () => {
   return (

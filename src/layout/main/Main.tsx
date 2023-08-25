@@ -34,7 +34,7 @@ export const Main = () => {
               color="#3730A3"
               href=""
             >
-              Read more
+              Download CV
             </Btn>
 
             <SmallText>I am currently open for part-time work.</SmallText>
