@@ -86,8 +86,8 @@ const StyledProjects = styled.section`
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: 55% 45%;
-  gap: 30px;
+  grid-template-columns: 54% 44%;
+  gap: 2%;
 `;
 
 const BoxItem = styled.div`
