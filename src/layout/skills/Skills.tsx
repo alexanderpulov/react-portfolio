@@ -5,6 +5,7 @@ import styled from "styled-components";
 import skillsPhoto from "../../assets/img/skills.webp";
 import { Item } from "./skill/Item";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 export const Skills = () => {
   return (
@@ -53,6 +54,12 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
   padding: 100px 0 150px;
+
+  @media ${theme.media.desktop} {
+    ${FlexWrapper} {
+      flex-direction: column;
+    }
+  }
 `;
 
 const TitleSpan = styled.span`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../styles/Theme";
 
 type BtnPropsType = {
   color?: string;
@@ -20,5 +21,9 @@ export const Btn = styled.a<BtnPropsType>`
 
   &:hover {
     transform: scale(1.04);
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `;

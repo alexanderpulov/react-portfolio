@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Btn } from "../../components/Btn";
+import { MobileMenu } from "./mobileMenu/MobileMenu";
+import { theme } from "../../styles/Theme";
 
 export const Header = () => {
   return (
@@ -35,6 +37,7 @@ export const Header = () => {
               Hire me
             </Btn>
           </Menu>
+          <MobileMenu></MobileMenu>
         </FlexWrapper>
       </Container>
     </StyledHeader>
@@ -47,6 +50,10 @@ const StyledHeader = styled.header`
   top: 0;
   z-index: 1; */
   background-color: #fff;
+
+  ${FlexWrapper} {
+    position: relative;
+  }
 `;
 
 const LogoBg = styled.div`
@@ -78,6 +85,10 @@ const Menu = styled.nav`
 
   ul {
     display: flex;
+
+    @media ${theme.media.tablet} {
+      display: none;
+    }
 
     li {
       margin-right: 80px;

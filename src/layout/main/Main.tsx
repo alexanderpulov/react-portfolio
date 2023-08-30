@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Btn } from "../../components/Btn";
+import { theme } from "../../styles/Theme";
 
 export const Main = () => {
   return (
@@ -48,10 +49,17 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   padding: 100px 0;
+
+  @media ${theme.media.mobile} {
+    ${FlexWrapper} {
+      flex-direction: column;
+    }
+  }
 `;
 
 const MainLeft = styled.div`
   max-width: 600px;
+  margin-right: 30px;
 `;
 
 const Name = styled.div`
@@ -98,8 +106,9 @@ const SmallText = styled.p`
 const MainRight = styled.div`
   border-radius: 6px;
   overflow: hidden;
-  width: 478px;
-  height: 525px;
+  max-width: 478px;
+  width: 100%;
+  min-height: 525px;
   background: url(${photo}) no-repeat center bottom;
   background-size: cover;
 `;

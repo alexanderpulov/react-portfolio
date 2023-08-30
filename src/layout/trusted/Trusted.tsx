@@ -7,6 +7,7 @@ import photo4 from "../../assets/img/trusted/google.png";
 import photo5 from "../../assets/img/trusted/netflix.png";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { theme } from "../../styles/Theme";
 
 export const Trusted = () => {
   return (
@@ -28,6 +29,12 @@ export const Trusted = () => {
 const StyledTrusted = styled.section`
   background-color: #fef2f2;
   padding: 100px 0;
+
+  @media ${theme.media.desktop} {
+    ${FlexWrapper} {
+      flex-direction: column;
+    }
+  }
 `;
 
 const Title = styled.h3`

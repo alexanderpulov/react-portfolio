@@ -86,8 +86,8 @@ const StyledProjects = styled.section`
 
 const Box = styled.div`
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
 `;
 
 const BoxItem = styled.div`
@@ -123,9 +123,10 @@ const BoxItem = styled.div`
 
   &:nth-child(2) {
     background: url(${photo2}) no-repeat center / cover;
+
     grid-column: 2;
     grid-row: 1 / 3;
-    height: 900px;
+    height: 62vw; //900px
   }
 
   &:nth-child(3) {
@@ -135,6 +136,6 @@ const BoxItem = styled.div`
   &:nth-child(4) {
     background: url(${photo4}) no-repeat center / cover;
     grid-column: 1 / 3;
-    height: 435px;
+    height: 30vw; //435px
   }
 `;
