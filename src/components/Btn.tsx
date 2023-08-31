@@ -22,8 +22,4 @@ export const Btn = styled.a<BtnPropsType>`
   &:hover {
     transform: scale(1.04);
   }
-
-  @media ${theme.media.tablet} {
-    display: none;
-  }
 `;

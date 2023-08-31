@@ -46,10 +46,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   padding: 40px 0;
-  /* position: sticky;
+  position: sticky;
   top: 0;
-  z-index: 1; */
-  background-color: #fff;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
 
   ${FlexWrapper} {
     position: relative;
@@ -82,6 +82,10 @@ const LogoText = styled.span`
 const Menu = styled.nav`
   display: flex;
   align-items: center;
+
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 
   ul {
     display: flex;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { SectionTitle } from "../../components/SectionTitle";
 import { Icon } from "../../components/Icon";
+import { theme } from "../../styles/Theme";
 
 export const Footer = () => {
   return (
@@ -64,4 +65,8 @@ const Social = styled.div`
   display: flex;
   justify-content: center;
   gap: 50px;
+
+  @media ${theme.media.mobile} {
+    gap: 20px;
+  }
 `;

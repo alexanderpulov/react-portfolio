@@ -55,7 +55,7 @@ export const Skills = () => {
 const StyledSkills = styled.section`
   padding: 100px 0 150px;
 
-  @media ${theme.media.desktop} {
+  @media ${theme.media.tablet} {
     ${FlexWrapper} {
       flex-direction: column;
     }
@@ -67,9 +67,18 @@ const TitleSpan = styled.span`
 `;
 
 const Photo = styled.div`
-  max-width: 440px;
-  max-height: 622px;
   margin-right: 50px;
+
+  img {
+    @media ${theme.media.tablet} {
+      margin-bottom: 60px;
+    }
+
+    @media ${theme.media.mobile} {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+  }
 `;
 
 const Content = styled.div`

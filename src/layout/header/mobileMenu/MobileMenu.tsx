@@ -7,11 +7,11 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 export const MobileMenu = () => {
   return (
     <StyledMobileMenu>
-      <BurgerButton isOpen={true}>
+      <BurgerButton isOpen={false}>
         <span></span>
       </BurgerButton>
 
-      <MobileMenuPopup isOpen={true}>
+      <MobileMenuPopup isOpen={false}>
         <FlexWrapper direction="column">
           <ul>
             <li>
@@ -117,7 +117,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     &::before {
       content: "";
       display: block;
-      width: 36px;
+      width: 24px;
       height: 2px;
       background-color: #1f2937;
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SectionTitle } from "../../components/SectionTitle";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
+import { theme } from "../../styles/Theme";
 
 export const Careers = () => {
   return (
@@ -62,6 +63,10 @@ export const Careers = () => {
 
 const StyledCareers = styled.section`
   padding-bottom: 150px;
+
+  @media ${theme.media.mobile} {
+    display: none;
+  }
 `;
 
 const Table = styled.table`

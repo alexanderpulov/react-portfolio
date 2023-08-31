@@ -22,7 +22,8 @@ export const Item = (props: ItemPropsType) => {
 };
 
 const StyledItem = styled.div`
-  width: 311px;
+  max-width: 300px;
+  margin: 0 30px 60px 0;
 `;
 
 const Title = styled.h3`

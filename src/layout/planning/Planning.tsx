@@ -6,6 +6,7 @@ import photo1 from "../../assets/img/planning/planning-1.png";
 import photo2 from "../../assets/img/planning/planning-2.png";
 import photo3 from "../../assets/img/planning/planning-3.png";
 import { Box } from "./box/Box";
+import { theme } from "../../styles/Theme";
 
 export const Planning = () => {
   return (
@@ -35,4 +36,11 @@ export const Planning = () => {
 
 const StyledPlanning = styled.section`
   padding-bottom: 150px;
+
+  @media ${theme.media.tablet} {
+    ${FlexWrapper} {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 `;

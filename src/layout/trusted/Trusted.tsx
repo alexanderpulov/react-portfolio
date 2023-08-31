@@ -14,7 +14,7 @@ export const Trusted = () => {
     <StyledTrusted>
       <Container>
         <Title>Trusted by</Title>
-        <FlexWrapper justify="space-between" align="center">
+        <FlexWrapper wrap="wrap" justify="space-between" align="center">
           <img src={photo1} alt="" />
           <img src={photo2} alt="" />
           <img src={photo3} alt="" />
@@ -30,11 +30,19 @@ const StyledTrusted = styled.section`
   background-color: #fef2f2;
   padding: 100px 0;
 
-  @media ${theme.media.desktop} {
+  img {
+    margin: 20px;
+  }
+
+  /* @media ${theme.media.desktop} {
     ${FlexWrapper} {
       flex-direction: column;
+      align-items: flex-start;
     }
-  }
+    img {
+      margin-bottom: 60px;
+    }
+  } */
 `;
 
 const Title = styled.h3`

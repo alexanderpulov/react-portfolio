@@ -20,6 +20,7 @@ export const Box = (props: BoxPropsType) => {
 const StyledBox = styled.div`
   max-width: 360px;
   text-align: center;
+  margin: 0 20px 60px;
 `;
 
 const Img = styled.img`
