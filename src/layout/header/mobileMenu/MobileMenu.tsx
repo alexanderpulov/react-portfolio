@@ -46,7 +46,7 @@ const StyledMobileMenu = styled.nav`
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
-  left: 200px;
+  left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
@@ -91,7 +91,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   top: 22px;
-  right: 0;
+  right: 22px;
   width: 100px;
   height: 100px;
   z-index: 2;
@@ -102,7 +102,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     display: block;
     width: 36px;
     height: 2px;
-    background-color: #1f2937;
+    background-color: #000;
 
     position: absolute;
     left: 40px;
@@ -119,7 +119,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 24px;
       height: 2px;
-      background-color: #1f2937;
+      background-color: #000;
 
       position: absolute;
       transform: translateY(-10px);
@@ -129,6 +129,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
         css<{ isOpen: boolean }>`
           transform: rotate(-45deg) translateY(0);
           background-color: #fff;
+          width: 36px;
         `}
     }
 
@@ -137,7 +138,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 24px;
       height: 2px;
-      background-color: #1f2937;
+      background-color: #000;
 
       position: absolute;
       transform: translateY(10px);
