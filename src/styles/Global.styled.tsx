@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         font-weight: 400;
         background-color: #fff;
+        min-width: 360px;
     }
 
     a {
