@@ -55,6 +55,10 @@ export const Skills = () => {
 const StyledSkills = styled.section`
   padding: 100px 0 150px;
 
+  @media screen and (max-width: 1189px) {
+    padding: 100px 0 90px;
+  }
+
   @media ${theme.media.tablet} {
     ${FlexWrapper} {
       flex-direction: column;
@@ -85,6 +89,5 @@ const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   flex-wrap: wrap;
 `;

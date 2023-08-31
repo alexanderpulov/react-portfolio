@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../../styles/Theme";
 
 type BoxPropsType = {
   img?: string;
@@ -30,9 +31,12 @@ const Img = styled.img`
 const Title = styled.h3`
   font-weight: 600;
   font-size: 30px;
-  line-height: 36px;
   color: #374151;
   margin-bottom: 20px;
+
+  @media ${theme.media.mobile} {
+    font-size: 26px;
+  }
 `;
 
 const Text = styled.p`

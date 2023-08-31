@@ -35,7 +35,7 @@ export const Planning = () => {
 };
 
 const StyledPlanning = styled.section`
-  padding-bottom: 150px;
+  padding-bottom: 90px;
 
   @media ${theme.media.tablet} {
     ${FlexWrapper} {

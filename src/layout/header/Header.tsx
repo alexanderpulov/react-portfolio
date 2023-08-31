@@ -48,7 +48,7 @@ const StyledHeader = styled.header`
   padding: 40px 0;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
 
   ${FlexWrapper} {

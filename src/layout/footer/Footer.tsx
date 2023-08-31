@@ -57,8 +57,12 @@ const Title = styled.h3`
   color: #374151;
   font-size: 48px;
   font-weight: 500;
-  line-height: 48px;
+  line-height: 1;
   margin-bottom: 20px;
+
+  @media ${theme.media.mobile} {
+    font-size: 38px;
+  }
 `;
 
 const Social = styled.div`
