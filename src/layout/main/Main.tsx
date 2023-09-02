@@ -100,15 +100,16 @@ const Name = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 72px;
+  font-size: calc((100vw - 360px) / (1200 - 360) * (72 - 56) + 56px);
+  /* font-size: 72px; */
   font-weight: 700;
   line-height: 1;
   color: #1f2937;
   margin-bottom: 40px;
 
-  @media ${theme.media.mobile} {
+  /* @media ${theme.media.mobile} {
     font-size: 56px;
-  }
+  } */
 `;
 
 const Text = styled.p`
