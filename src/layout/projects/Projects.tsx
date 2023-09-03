@@ -123,6 +123,15 @@ const BoxItem = styled.div`
     }
   }
 
+  @media ${theme.media.tablet} {
+    ${BtnProj} {
+      opacity: 1;
+    }
+    &::after {
+      transform: scale(1);
+    }
+  }
+
   &:nth-child(1) {
     background: url(${photo1}) no-repeat center / cover;
 
