@@ -60,18 +60,16 @@ const StyledMain = styled.section`
 
 const MainLeft = styled.div`
   max-width: 600px;
+  width: 100%;
   margin-right: 80px;
 
   @media ${theme.media.tablet} {
     max-width: 550px;
-    width: 100%;
     margin-right: 0;
   }
 
   @media ${theme.media.mobile} {
     max-width: 360px;
-    width: 100%;
-    margin-right: 0;
   }
 `;
 

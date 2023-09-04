@@ -73,6 +73,10 @@ const TitleSpan = styled.span`
 const Photo = styled.div`
   margin-right: 50px;
 
+  @media ${theme.media.mobile} {
+    margin-right: 0;
+  }
+
   img {
     @media ${theme.media.tablet} {
       margin-bottom: 60px;
@@ -80,7 +84,6 @@ const Photo = styled.div`
 
     @media ${theme.media.mobile} {
       width: 100%;
-      margin-bottom: 60px;
     }
   }
 `;
