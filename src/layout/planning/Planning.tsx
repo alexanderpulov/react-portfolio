@@ -1,46 +1,40 @@
 import React from "react";
-import styled from "styled-components";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import photo1 from "../../assets/img/planning/planning-1.png";
 import photo2 from "../../assets/img/planning/planning-2.png";
 import photo3 from "../../assets/img/planning/planning-3.png";
 import { Box } from "./box/Box";
-import { theme } from "../../styles/Theme";
+import { S } from "./Planning_Styles";
 
-export const Planning = () => {
+export const Planning: React.FC = () => {
+  const boxData = [
+    {
+      img: photo1,
+      title: "Business planning",
+      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      img: photo2,
+      title: "Financial planning",
+      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      img: photo3,
+      title: "Market Analytics",
+      text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+  ];
+
   return (
-    <StyledPlanning>
+    <S.Planning>
       <Container>
         <FlexWrapper justify="space-between">
-          <Box
-            img={photo1}
-            title="Business planning"
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          />
-          <Box
-            img={photo2}
-            title="Financial planning"
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          />
-          <Box
-            img={photo3}
-            title="Market Analytics"
-            text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          />
+          {boxData.map((b) => {
+            return <Box img={b.img} title={b.title} text={b.text} />;
+          })}
         </FlexWrapper>
       </Container>
-    </StyledPlanning>
+    </S.Planning>
   );
 };
-
-const StyledPlanning = styled.section`
-  padding-bottom: 90px;
-
-  @media ${theme.media.tablet} {
-    ${FlexWrapper} {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-`;

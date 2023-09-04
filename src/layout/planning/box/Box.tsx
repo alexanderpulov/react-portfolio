@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import { theme } from "../../../styles/Theme";
+import { S } from "../Planning_Styles";
 
 type BoxPropsType = {
   img?: string;
@@ -8,39 +7,12 @@ type BoxPropsType = {
   text?: string;
 };
 
-export const Box = (props: BoxPropsType) => {
+export const Box: React.FC<BoxPropsType> = (props: BoxPropsType) => {
   return (
-    <StyledBox>
-      <Img src={props.img} alt="" />
-      <Title>{props.title}</Title>
-      <Text>{props.text}</Text>
-    </StyledBox>
+    <S.Box>
+      <S.Img src={props.img} alt="" />
+      <S.Title>{props.title}</S.Title>
+      <S.Text>{props.text}</S.Text>
+    </S.Box>
   );
 };
-
-const StyledBox = styled.div`
-  max-width: 360px;
-  text-align: center;
-  margin: 0 20px 60px;
-`;
-
-const Img = styled.img`
-  margin-bottom: 40px;
-`;
-
-const Title = styled.h3`
-  font-weight: 600;
-  font-size: 30px;
-  color: #374151;
-  margin-bottom: 20px;
-
-  @media ${theme.media.mobile} {
-    font-size: 26px;
-  }
-`;
-
-const Text = styled.p`
-  color: #9ca3af;
-  font-size: 18px;
-  line-height: 28px;
-`;

@@ -1,95 +1,69 @@
 import React from "react";
-import styled from "styled-components";
 import { SectionTitle } from "../../components/SectionTitle";
-import { FlexWrapper } from "../../components/FlexWrapper";
+import { S } from "./Careers_Styles";
 import { Container } from "../../components/Container";
-import { theme } from "../../styles/Theme";
 
-export const Careers = () => {
+export const Careers: React.FC = () => {
+  const tableData = [
+    {
+      company: "Massa Fames",
+      city: "New York",
+      position: "Junior Front-End Developer",
+      year: 2016,
+    },
+    {
+      company: "Massa Fames",
+      city: "New York",
+      position: "Junior Front-End Developer",
+      year: 2016,
+    },
+    {
+      company: "Massa Fames",
+      city: "New York",
+      position: "Junior Front-End Developer",
+      year: 2016,
+    },
+    {
+      company: "Massa Fames",
+      city: "New York",
+      position: "Junior Front-End Developer",
+      year: 2016,
+    },
+    {
+      company: "Massa Fames",
+      city: "New York",
+      position: "Junior Front-End Developer",
+      year: 2016,
+    },
+  ];
+
   return (
-    <StyledCareers>
+    <S.Careers>
       <Container>
         <SectionTitle>Careers</SectionTitle>
-        <Table>
+        <S.Table>
           <thead>
             <tr>
-              <Th>COMPANY</Th>
-              <Th>POSITION</Th>
-              <Th>YEAR</Th>
+              <S.Th>COMPANY</S.Th>
+              <S.Th>POSITION</S.Th>
+              <S.Th>YEAR</S.Th>
             </tr>
           </thead>
           <tbody>
-            <Tr>
-              <Td>
-                <span>Massa Fames</span> / New York
-              </Td>
-              <Td>Junior Front-End Developer</Td>
-              <Td>2016</Td>
-            </Tr>
-            <Tr>
-              <Td>
-                <span>Massa Fames</span> / New York
-              </Td>
-              <Td>Junior Front-End Developer</Td>
-              <Td>2016</Td>
-            </Tr>
-            <Tr>
-              <Td>
-                <span>Massa Fames</span> / New York
-              </Td>
-              <Td>Junior Front-End Developer</Td>
-              <Td>2016</Td>
-            </Tr>
-            <Tr>
-              <Td>
-                <span>Massa Fames</span> / New York
-              </Td>
-              <Td>Junior Front-End Developer</Td>
-              <Td>2016</Td>
-            </Tr>
-            <Tr>
-              <Td>
-                <span>Massa Fames</span> / New York
-              </Td>
-              <Td>Junior Front-End Developer</Td>
-              <Td>2016</Td>
-            </Tr>
+            {tableData.map((t) => {
+              return (
+                <S.Tr>
+                  <S.Td>
+                    <span>{t.company}</span> / {t.city}
+                  </S.Td>
+                  <S.Td>{t.position}</S.Td>
+                  <S.Td>{t.year}</S.Td>
+                </S.Tr>
+              );
+            })}
           </tbody>
-        </Table>
+        </S.Table>
       </Container>
-    </StyledCareers>
+    </S.Careers>
   );
 };
-
-const StyledCareers = styled.section`
-  padding-bottom: 150px;
-
-  @media ${theme.media.mobile} {
-    display: none;
-  }
-`;
-
-const Table = styled.table`
-  width: 100%;
-`;
-
-const Th = styled.th`
-  font-weight: 500;
-  color: #6b7280;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: left;
-`;
-
-const Tr = styled.tr``;
-
-const Td = styled.td`
-  font-size: 16px;
-  color: #6b7280;
-  padding-top: 80px;
-
-  span {
-    color: #1f2937;
-    font-weight: 600;
-  }
-`;

@@ -1,76 +1,49 @@
 import React from "react";
-import styled from "styled-components";
 import { Container } from "../../components/Container";
-import { SectionTitle } from "../../components/SectionTitle";
 import { Icon } from "../../components/Icon";
-import { theme } from "../../styles/Theme";
+import { S } from "./Footer_Styles";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
+  const socialData = [
+    {
+      iconId: "twitter",
+    },
+    {
+      iconId: "dribbble",
+    },
+    {
+      iconId: "facebook",
+    },
+    {
+      iconId: "codepen",
+    },
+    {
+      iconId: "mail",
+    },
+    {
+      iconId: "instagram",
+    },
+  ];
+
   return (
-    <StyledFooter>
+    <S.Footer>
       <Container>
-        <Title>Contact with me</Title>
+        <S.Title>Contact with me</S.Title>
 
         <p>
           I’m not currently taking on new client work but feel free to contact
           me for any other inquiries.
         </p>
-        <Social>
-          <a href="">
-            <Icon iconId="twitter" />
-          </a>
-          <a href="">
-            <Icon iconId="dribbble" />
-          </a>
-          <a href="">
-            <Icon iconId="facebook" />
-          </a>
-          <a href="">
-            <Icon iconId="codepen" />
-          </a>
-          <a href="">
-            <Icon iconId="mail" />
-          </a>
-          <a href="">
-            <Icon iconId="instagram" />
-          </a>
-        </Social>
+        <S.Social>
+          {socialData.map((i) => {
+            return (
+              <a href="">
+                <Icon iconId={i.iconId} />
+              </a>
+            );
+          })}
+        </S.Social>
       </Container>
-    </StyledFooter>
+    </S.Footer>
   );
 };
-
-const StyledFooter = styled.footer`
-  background-color: #fef2f2;
-  padding: 110px 0;
-  text-align: center;
-
-  p {
-    font-size: 18px;
-    color: #9ca3af;
-    max-width: 664px;
-    margin: 0 auto 100px;
-  }
-`;
-
-const Title = styled.h3`
-  color: #374151;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 20px;
-
-  @media ${theme.media.mobile} {
-    font-size: 38px;
-  }
-`;
-
-const Social = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-
-  @media ${theme.media.mobile} {
-    gap: 20px;
-  }
-`;
