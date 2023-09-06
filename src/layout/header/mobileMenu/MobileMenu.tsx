@@ -4,13 +4,18 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { S } from "./MobileMenu_Styles";
 
 export const MobileMenu: React.FC = () => {
+  const [burgerIsOpened, setBurgerIsOpened] = React.useState(false);
+
   return (
     <S.MobileMenu>
-      <S.BurgerButton isOpen={false}>
+      <S.BurgerButton
+        onClick={() => setBurgerIsOpened(!burgerIsOpened)}
+        isOpen={burgerIsOpened}
+      >
         <span></span>
       </S.BurgerButton>
 
-      <S.MobileMenuPopup isOpen={false}>
+      <S.MobileMenuPopup isOpen={burgerIsOpened}>
         <FlexWrapper direction="column">
           <ul>
             <li>
