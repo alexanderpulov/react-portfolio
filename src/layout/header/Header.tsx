@@ -24,7 +24,7 @@ const items = [
 
 export const Header: React.FC = () => {
   return (
-    <S.Header>
+    <S.Header className=".active">
       <Container>
         <FlexWrapper justify="space-between" align="center">
           <a

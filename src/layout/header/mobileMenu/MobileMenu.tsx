@@ -36,7 +36,14 @@ export const MobileMenu: React.FC = () => {
           {items.map((i) => (
             <ul>
               <li>
-                <Link to={i.href} smooth={true} offset={-60}>
+                <Link
+                  onClick={() => {
+                    setBurgerIsOpened(false);
+                  }}
+                  to={i.href}
+                  smooth={true}
+                  offset={-60}
+                >
                   {i.title}
                 </Link>
               </li>
