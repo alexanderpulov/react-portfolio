@@ -23,8 +23,24 @@ const items = [
 ];
 
 export const Header: React.FC = () => {
+  const [headerOnScroll, setHeaderOnScroll] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setHeaderOnScroll(true);
+      } else {
+        setHeaderOnScroll(false);
+      }
+    });
+  });
+
   return (
-    <S.Header className=".active">
+    <S.Header
+      shadow={headerOnScroll}
+      padding={headerOnScroll}
+      position={headerOnScroll}
+    >
       <Container>
         <FlexWrapper justify="space-between" align="center">
           <a
@@ -41,7 +57,7 @@ export const Header: React.FC = () => {
             {items.map((i) => (
               <ul>
                 <li>
-                  <Link to={i.href} smooth={true} offset={-60}>
+                  <Link to={i.href} smooth={true}>
                     {i.title}
                   </Link>
                 </li>

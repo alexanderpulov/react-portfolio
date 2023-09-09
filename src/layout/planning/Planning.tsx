@@ -27,7 +27,7 @@ export const Planning: React.FC = () => {
   ];
 
   return (
-    <S.Planning>
+    <S.Planning id="planning">
       <Container>
         <FlexWrapper justify="space-between">
           {boxData.map((b) => {

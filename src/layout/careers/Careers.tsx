@@ -38,7 +38,7 @@ export const Careers: React.FC = () => {
   ];
 
   return (
-    <S.Careers>
+    <S.Careers id="careers">
       <Container>
         <SectionTitle>Careers</SectionTitle>
         <S.Table>

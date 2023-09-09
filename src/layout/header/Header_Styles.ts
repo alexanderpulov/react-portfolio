@@ -2,12 +2,19 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { theme } from "../../styles/Theme";
 
-const Header = styled.header`
-  padding: 40px 0;
-  position: sticky;
+const Header = styled.header<{
+  shadow?: boolean;
+  padding?: boolean;
+  position?: boolean;
+}>`
+  padding: ${(props) => (props.padding ? "20px 0" : "40px 0")};
+  position: ${(props) => (props.position ? "sticky" : "static")};
   top: 0;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: ${(props) =>
+    props.shadow ? "0 1px 0 rgba(0, 0, 0, 0.1)" : "none"};
+  transition: 0.2s ease-in-out;
 
   a {
     cursor: pointer;
