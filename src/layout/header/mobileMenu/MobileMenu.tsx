@@ -2,6 +2,22 @@ import React from "react";
 import { Btn } from "../../../components/Btn";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { S } from "./MobileMenu_Styles";
+import { Link } from "react-scroll";
+
+const items = [
+  {
+    title: "About",
+    href: "about",
+  },
+  {
+    title: "Skills",
+    href: "skills",
+  },
+  {
+    title: "Projects",
+    href: "projects",
+  },
+];
 
 export const MobileMenu: React.FC = () => {
   const [burgerIsOpened, setBurgerIsOpened] = React.useState(false);
@@ -17,17 +33,15 @@ export const MobileMenu: React.FC = () => {
 
       <S.MobileMenuPopup isOpen={burgerIsOpened}>
         <FlexWrapper direction="column">
-          <ul>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">Works</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-          </ul>
+          {items.map((i) => (
+            <ul>
+              <li>
+                <Link to={i.href} smooth={true} offset={-60}>
+                  {i.title}
+                </Link>
+              </li>
+            </ul>
+          ))}
           <Btn color="#fff" href="">
             Hire me
           </Btn>

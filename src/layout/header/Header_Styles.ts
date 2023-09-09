@@ -9,6 +9,10 @@ const Header = styled.header`
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
 
+  a {
+    cursor: pointer;
+  }
+
   ${FlexWrapper} {
     position: relative;
   }
@@ -54,6 +58,7 @@ const Menu = styled.nav`
       a {
         font-size: 18px;
         font-weight: 500;
+        cursor: pointer;
       }
     }
   }

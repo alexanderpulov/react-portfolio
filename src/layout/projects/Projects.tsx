@@ -7,7 +7,7 @@ import { BtnProj } from "./project/BtnProj";
 
 export const Projects: React.FC = () => {
   return (
-    <S.Projects>
+    <S.Projects id="projects">
       <Container>
         <SectionTitle>
           It’s great to always give the customer the best feed.

@@ -41,7 +41,7 @@ export const Skills: React.FC = () => {
   ];
 
   return (
-    <S.Skills>
+    <S.Skills id="skills">
       <Container>
         <SectionTitle>
           From beginning ideas to individual integrity, rich identity from the
