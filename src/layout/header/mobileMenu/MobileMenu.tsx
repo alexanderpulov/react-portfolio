@@ -50,7 +50,7 @@ export const MobileMenu: React.FC = () => {
             </ul>
           ))}
           <Btn color="#fff" href="">
-            Hire me
+            Email me
           </Btn>
         </FlexWrapper>
       </S.MobileMenuPopup>

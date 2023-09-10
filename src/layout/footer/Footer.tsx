@@ -29,10 +29,7 @@ export const Footer: React.FC = () => {
     <S.Footer>
       <Container>
         <S.Title>Contact with me</S.Title>
-        <p>
-          I’m not currently taking on new client work but feel free to contact
-          me for any other inquiries.
-        </p>
+        <p>I am currently open for full-time work.</p>
         <S.Social>
           {socialData.map((i) => {
             return (

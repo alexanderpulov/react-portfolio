@@ -13,9 +13,9 @@ export const Main: React.FC = () => {
             <S.Name>Alexander Pulov</S.Name>
             <S.Title>Creative thinker Minimalism lover</S.Title>
             <S.Text>
-              Hi, I’m Alexander. I’m UI/UX Designer. If you are looking for
-              Designer to build your brands and grow your business Let’s shake
-              hands with me.
+              Hi, I’m Alexander. I’m Front-End Developer. If you are looking for
+              Web Developer to build your brands and grow your business Let’s
+              shake hands with me.
             </S.Text>
 
             <Btn
@@ -25,7 +25,7 @@ export const Main: React.FC = () => {
               margin="0 20px 20px 0"
               href=""
             >
-              Hire me
+              Email me
             </Btn>
             <Btn
               display="inline-block"
@@ -36,7 +36,7 @@ export const Main: React.FC = () => {
               Download CV
             </Btn>
 
-            <S.SmallText>I am currently open for part-time work.</S.SmallText>
+            <S.SmallText>I am currently open for full-time work.</S.SmallText>
           </S.MainLeft>
           <S.MainRight></S.MainRight>
         </FlexWrapper>

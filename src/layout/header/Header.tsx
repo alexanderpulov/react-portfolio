@@ -65,7 +65,7 @@ export const Header: React.FC = () => {
             ))}
 
             <Btn background="fff" color="#3730A3" href="">
-              Hire me
+              Email me
             </Btn>
           </S.Menu>
           <MobileMenu></MobileMenu>
