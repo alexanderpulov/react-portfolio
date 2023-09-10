@@ -2,6 +2,7 @@ import React from "react";
 import { SectionTitle } from "../../components/SectionTitle";
 import { S } from "./Careers_Styles";
 import { Container } from "../../components/Container";
+import { Fade } from "react-awesome-reveal";
 
 export const Careers: React.FC = () => {
   const tableData = [
@@ -40,7 +41,9 @@ export const Careers: React.FC = () => {
   return (
     <S.Careers id="careers">
       <Container>
-        <SectionTitle>Careers</SectionTitle>
+        <Fade direction="up" duration={700}>
+          <SectionTitle>Careers</SectionTitle>
+        </Fade>
         <S.Table>
           <thead>
             <tr>

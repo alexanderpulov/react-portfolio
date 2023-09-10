@@ -5,6 +5,7 @@ import skillsPhoto from "../../assets/img/skills.webp";
 import { Item } from "./skill/Item";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { S } from "./Skills_Styles";
+import { Fade } from "react-awesome-reveal";
 
 export const Skills: React.FC = () => {
   const skillsData = [
@@ -43,10 +44,12 @@ export const Skills: React.FC = () => {
   return (
     <S.Skills id="skills">
       <Container>
-        <SectionTitle>
-          From beginning ideas to individual integrity, rich identity from the
-          line <S.TitleSpan>on the paper to final projects</S.TitleSpan>
-        </SectionTitle>
+        <Fade direction="up" duration={700}>
+          <SectionTitle>
+            From beginning ideas to individual integrity, rich identity from the
+            line <S.TitleSpan>on the paper to final projects</S.TitleSpan>
+          </SectionTitle>
+        </Fade>
         <FlexWrapper>
           <S.Photo>
             <img src={skillsPhoto} alt="" />

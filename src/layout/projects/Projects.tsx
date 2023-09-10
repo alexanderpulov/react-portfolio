@@ -4,14 +4,17 @@ import { SectionTitle } from "../../components/SectionTitle";
 import { Icon } from "../../components/Icon";
 import { S } from "./Projects_Styles";
 import { BtnProj } from "./project/BtnProj";
+import { Fade } from "react-awesome-reveal";
 
 export const Projects: React.FC = () => {
   return (
     <S.Projects id="projects">
       <Container>
-        <SectionTitle>
-          It’s great to always give the customer the best feed.
-        </SectionTitle>
+        <Fade direction="up" duration={700}>
+          <SectionTitle>
+            It’s great to always give the customer the best feed.
+          </SectionTitle>
+        </Fade>
 
         <S.Box>
           <S.BoxItem>

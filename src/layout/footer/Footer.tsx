@@ -29,7 +29,6 @@ export const Footer: React.FC = () => {
     <S.Footer>
       <Container>
         <S.Title>Contact with me</S.Title>
-
         <p>
           I’m not currently taking on new client work but feel free to contact
           me for any other inquiries.

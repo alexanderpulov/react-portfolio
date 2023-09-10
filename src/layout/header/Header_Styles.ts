@@ -14,7 +14,7 @@ const Header = styled.header<{
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: ${(props) =>
     props.shadow ? "0 1px 0 rgba(0, 0, 0, 0.1)" : "none"};
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   a {
     cursor: pointer;
