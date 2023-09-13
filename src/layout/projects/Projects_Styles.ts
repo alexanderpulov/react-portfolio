@@ -93,15 +93,15 @@ const BoxItem = styled.div`
   &:nth-child(4) {
     background: url(${photo4}) no-repeat center / cover;
     grid-column: 1 / 3;
-    height: 420px;
+    height: 430px;
 
     @media ${theme.media.desktop} {
-      height: 300px;
+      height: 310px;
     }
 
     @media ${theme.media.tablet} {
       grid-area: 4 / 1 / 5 / 2;
-      height: 420px;
+      height: 400px;
     }
   }
 `;
