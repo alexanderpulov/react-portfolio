@@ -73,7 +73,7 @@ const BoxItem = styled.div`
     height: 880px;
 
     @media ${theme.media.desktop} {
-      height: 650px;
+      height: 640px;
     }
 
     @media ${theme.media.tablet} {
@@ -93,15 +93,15 @@ const BoxItem = styled.div`
   &:nth-child(4) {
     background: url(${photo4}) no-repeat center / cover;
     grid-column: 1 / 3;
-    height: 430px;
+    height: 410px;
 
     @media ${theme.media.desktop} {
-      height: 315px;
+      height: 300px;
     }
 
     @media ${theme.media.tablet} {
       grid-area: 4 / 1 / 5 / 2;
-      height: 430px;
+      height: 410px;
     }
   }
 `;
