@@ -9,7 +9,7 @@ type BtnPropsType = {
 
 export const Btn = styled.a<BtnPropsType>`
   color: ${(props) => props.color};
-  padding: 10px 30px;
+  padding: 12px 30px;
   background-color: ${(props) => props.background};
   border: #3730a3 1px solid;
   border-radius: 6px;

@@ -27,8 +27,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     css<{ isOpen: boolean }>`
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      padding-top: 250px;
+      align-items: center;
     `}
 
   ul {

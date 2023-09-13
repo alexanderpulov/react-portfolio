@@ -62,7 +62,6 @@ const BoxItem = styled.div`
 
     @media ${theme.media.tablet} {
       grid-area: 1 / 1 / 2 / 2;
-      height: 400px;
     }
   }
 
@@ -71,7 +70,11 @@ const BoxItem = styled.div`
 
     grid-column: 2;
     grid-row: 1 / 3;
-    height: 62vw; //900px
+    height: 880px;
+
+    @media ${theme.media.desktop} {
+      height: 650px;
+    }
 
     @media ${theme.media.tablet} {
       grid-area: 2 / 1 / 3 / 2;
@@ -84,18 +87,21 @@ const BoxItem = styled.div`
 
     @media ${theme.media.tablet} {
       grid-area: 3 / 1 / 4 / 2;
-      height: 400px;
     }
   }
 
   &:nth-child(4) {
     background: url(${photo4}) no-repeat center / cover;
     grid-column: 1 / 3;
-    height: 30vw; //435px
+    height: 430px;
+
+    @media ${theme.media.desktop} {
+      height: 315px;
+    }
 
     @media ${theme.media.tablet} {
       grid-area: 4 / 1 / 5 / 2;
-      height: 400px;
+      height: 430px;
     }
   }
 `;
